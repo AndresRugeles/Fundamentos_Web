@@ -1,0 +1,42 @@
+/* PSEUDOCLASES - id="pseudoclases-de-estado" */
+
+/* Todos los elementos que estén dentro de esta clase y que cumplan con la pseudoclase, entonces: */
+.form-pseudoclases *:required {
+  border-color: yellow;
+}
+
+.form-pseudoclases *:valid {
+  border-color: green;
+}
+
+.form-pseudoclases *:invalid {
+  border-color: red;
+}
+
+.form-pseudoclases *:focus {
+  background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled{
+    background-color: pink;
+}
+
+/* El orden para la etiqueta "a" seria link, active, visited, hover */
+
+.menu-pseudoclases a:visited{
+    color: olive
+}
+
+/* IMPORTANTE: hover siempre debe estar al final por el tema de la jerarquía. */
+.menu-pseudoclases a:hover{
+    color: orange;
+}
+
+.p-pseudoclases:hover{
+    font-size: 24px;
+}
+
+/* Esto indica que en la url está activo este id y por lo tanto, todo el article en este caso, se resaltará en lightgreen */
+#temario-css:target{
+    background-color: lightgreen;
+}
